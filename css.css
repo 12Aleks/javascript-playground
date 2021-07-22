@@ -1,0 +1,12 @@
+#root{
+    border: 1px solid grey;
+    overflow: auto;
+    margin: 100px;
+    width: 600px;
+    height: 700px;
+}
+.firstElement{
+    height: 900px;
+    background-color: azure;
+    border-bottom: 1px solid gold;
+}
