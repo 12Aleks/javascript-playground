@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Add the necessary CSS file -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+  </head>
+  <style>
+    .owl_wrapper {
+      max-width: 800px;
+      /* height: 100px; */
+      position: relative;
+      overflow: hidden;
+      display: block;
+      margin: 0 auto;
+    }
+    img{
+        max-height: 120px;
+    }
+    h1{
+        font-size: 50px;
+    }
+  </style>
+  <body>
+    <div class="owl_wrapper">
+      <div class="owl-carousel">
+        <div class="item"><img src="./images/h.jpg" alt="Image 1" /></div>
+        <div class="item"><img src="./images/e.jpg" alt="Image 2" /></div>
+        <div class="item"><img src="./images/l.jpg" alt="Image 3" /></div>
+        <div class="item"><img src="./images/l.jpg" alt="Image 4" /></div>
+        <div class="item"><img src="./images/o.jpg" alt="Image 5" /></div>
+        <div class="item"><h1></h1></div>
+        <div class="item"><img src="./images/w.jpg" alt="Image 7" /></div>
+        <div class="item"><img src="./images/o.jpg" alt="Image 8" /></div>
+        <div class="item"><img src="./images/r.jpg" alt="Image 9" /></div>
+        <div class="item"><img src="./images/l.jpg" alt="Image 10" /></div>
+        <div class="item"><img src="./images/d.jpg" alt="Image 11" /></div>
+        <div class="item"><h1></h1></div>
+      </div>
+    </div>
+
+    <!-- Add the CDN link for jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        jQuery(function ($) {
+          $(".owl-carousel").owlCarousel({
+            loop: true,
+            nav: false,
+            margin: 30,
+            mouseDrag: true,
+            touchDrag: true,
+            responsiveClass: true,
+            slideTransition: "linear",
+            dots: true,
+            autoplay: true,
+            smartSpeed: 8000,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: true,
+            singleItem: true,
+            stagePadding: 0,
+            responsive: {
+              0: {
+                items: 2,
+                nav: false,
+              },
+              780: {
+                items: 4,
+                dots: false,
+              },
+              1000: {
+                items: 5,
+                dots: false,
+              },
+            },
+          });
+        });
+      </script>
+    <!-- Add the CDN link for Owl Carousel JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  </body>
+</html>
